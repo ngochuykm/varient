@@ -1,6 +1,7 @@
 import React from 'react'
 import {HoverStyle,PostItemWap,PostItemImage,PostItemRight,PostItemTitle} from '../../style/styled-component'
 import{ThemeProvider} from 'styled-components'
+import * as types from '../../constant'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faComment,faEye} from '@fortawesome/free-solid-svg-icons'
 import {faMusic,faPlay} from '@fortawesome/free-solid-svg-icons'

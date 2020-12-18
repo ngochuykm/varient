@@ -3,6 +3,7 @@ import {Container} from '../style/styled-component'
 import ContentItemPost from './ContentItemPost'
 import SlideBar from './homePage/SlideBar'
 import Footer from './Footer'
+import * as types from '../constant'
 import {typeColors} from './../constant'
 import '../style/post-style.css'
 
@@ -29,9 +30,9 @@ class PostStyleMedium extends React.Component{
                     <div className="post-container">
                         <div className="name-page">
                             {this.props.pageSource.map((value,key) => {
-                                return <span key={key}><a href={value.pageLink}>{(key>0? " / ": "") + value.name}</a></span>
+                                return <span key={key}><a href={types.homePage + value.pageLink}>{(key>0? " / ": "") + value.name}</a></span>
                             })}
-                            <span><a href={this.props.pageLink}>{" / " + this.props.name}</a></span>
+                            <span><a href={types.homePage + this.props.pageLink}>{" / " + this.props.name}</a></span>
                         </div>
                         <div className="main-post">
                             <ContentItemPost typeColor={typeColor} title = {title} {...this.props}/>

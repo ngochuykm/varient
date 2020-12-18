@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faLanguage,faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import i18next from '../language'
 import {withTranslation} from 'react-i18next'
-import * as types from '../../constant'
+import * as types from '../constant'
 import '../style/header.css'
 
 

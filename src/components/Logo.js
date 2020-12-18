@@ -2,7 +2,7 @@ import React from 'react'
 import {Container} from '../style/styled-component'
 import logo from '../image/logo.svg'
 import logoFooter from '../image/logo-footer.svg'
-import * as types from '../../constant'
+import * as types from '../constant'
 import bn1 from '../image/bn1.jpg'
 import "../style/logo.css"
 
