@@ -4,6 +4,7 @@ import logolight from '../image/logo-footer.svg'
 import { HoverStyle,ButtonVote } from '../style/styled-component'
 import {faExclamation,faAngleUp} from '@fortawesome/free-solid-svg-icons'
 import{ThemeProvider} from 'styled-components'
+import * as types from '../constant'
 import '../style/footer.css'
 import { faFacebookF,faTwitter,faPinterestP,faInstagram,faLinkedin,faVk,faYahoo } from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -58,13 +59,13 @@ class Footer extends React.Component{
                         <div className="footer-widget">
                             <div className="title">SOCIAL MEDIA</div>
                             <div className="social-media">
-                                <a href="/" target="_blank" className="mobile-menu-social icon-facebook"><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-twitter"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-pinterest"><FontAwesomeIcon icon={faPinterestP}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-instagram"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-linkedin"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-vk"><FontAwesomeIcon icon={faVk}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-yahoo"><FontAwesomeIcon icon={faYahoo}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-facebook"><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-twitter"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-pinterest"><FontAwesomeIcon icon={faPinterestP}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-instagram"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-linkedin"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-vk"><FontAwesomeIcon icon={faVk}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-yahoo"><FontAwesomeIcon icon={faYahoo}></FontAwesomeIcon></a>
                             </div>
                             <div className="widget-newsletter">Subscribe here to get interesting stuff and updates!</div>
                             <div className="subscribe-input">

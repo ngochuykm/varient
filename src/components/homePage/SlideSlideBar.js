@@ -2,6 +2,7 @@ import React from 'react'
 import { Slide  } from 'react-slideshow-image';
 import '../../style/styles-react-slideshow-image.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import * as types from '../../constant'
 import{ThemeProvider} from 'styled-components'
 import {HoverStyle} from '../../style/styled-component'
 import {faComment,faEye,faMusic,faPlay} from '@fortawesome/free-solid-svg-icons'
@@ -32,7 +33,7 @@ class SlideFeature extends React.Component{
                     <div className="each-slide slide-item">
                         <div className="slide-item">
                             <span className="category-label" style={{backgroundColor:typeColor[value.type]}}>{value.type}</span>
-                            <a href={value.linkPage} className="img-link-small">
+                            <a href={types.homePage + value.linkPage} className="img-link-small">
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAHMAQMAAAAzt0RXAAAAA1BMVEVHcEyC+tLSAAAAAXRSTlMAQObYZgAAADhJREFUGBntwTEBAAAAwiD7p14MH2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAXYiQAAEBSA5gAAAAAElFTkSuQmCC" alt="bg" class="img-responsive img-bg"/>
                                 <div className="img-container-small">
                                     <div className="img-wrap">

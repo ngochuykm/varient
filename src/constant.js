@@ -76,3 +76,5 @@ export const typeColors = {
     RSS_NEWS: "#607d8b",
     LAST_POSTS:"#161616"
 }
+
+export const homePage = "/varent"

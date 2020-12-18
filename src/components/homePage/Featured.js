@@ -1,5 +1,6 @@
 import React from 'react'
 import{ThemeProvider} from 'styled-components'
+import * as types from '../../constant'
 import {Container} from '../../style/styled-component'
 import Carousel from 'react-bootstrap/Carousel'
 import SlideFeature from './SlideFeature'
@@ -31,7 +32,7 @@ class Featured extends React.Component{
                 <div className={featureBox}>
                     <div className="box-item">
                         <span className="category-label" style={{backgroundColor:typeColor[value.type]}}>{value.type}</span>
-                        <a href={value.linkPage} className="img-link">
+                        <a href={types.homePage+value.linkPage} className="img-link">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARsAAADZAQMAAAAqtAZpAAAAA1BMVEVHcEyC+tLSAAAAAXRSTlMAQObYZgAAAB5JREFUGBntwYEAAAAAw6D7U8/gBNUAAAAAAAAAgC8fXQABZRtuDQAAAABJRU5ErkJggg==" alt="bg" class="img-responsive img-bg"/>
                             <div className="img-container">
                                 {value.typeIcon=="none" ? "":(<div class="meida-icon">

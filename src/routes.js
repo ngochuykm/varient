@@ -8,10 +8,10 @@ let RouteItems = []
 const RoutesItemRender = (pageItem,pageSource) => (
     pageItem.map((value,key) => {
         if(value.pageItem){
-            RouteItems.push(<Route key={key} exact path={value.pageLink} component={() => <value.component pageSource={pageSource} name={value.name} pageLink={value.pageLink} dataPage={value.dataPage}/>}/>)
+            RouteItems.push(<Route key={key} exact path={value.pageLink} component={() => <value.component pageSource={pageSource} name={value.name} pageLink={"/varent"+value.pageLink} dataPage={value.dataPage}/>}/>)
             RoutesItemRender(value.pageItem,pageSource.concat([{name:value.name, pageLink:value.pageLink}]))
         }else{
-            RouteItems.push(<Route key={key} exact path={value.pageLink} component={() => <value.component pageSource={pageSource} name={value.name} pageLink={value.pageLink} dataPage={value.dataPage}/>}/>)
+            RouteItems.push(<Route key={key} exact path={value.pageLink} component={() => <value.component pageSource={pageSource} name={value.name} pageLink={"/varent" + value.pageLink} dataPage={value.dataPage}/>}/>)
         }
     })
 )

@@ -3,6 +3,7 @@ import{ThemeProvider} from 'styled-components'
 import {HoverStyle,DropDownMenuElement,UlMenuLeft,LiMenuLeft} from '../style/styled-component'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faComment,faEye} from '@fortawesome/free-solid-svg-icons'
+import * as types from '../constant'
 import '../style/dropdownmenu.css'
 
 class DropDownMenu extends React.Component{
@@ -34,7 +35,7 @@ class DropDownMenu extends React.Component{
             }
         }
         let menuLeft = menuLeftArray.map((value,key)=>{
-            return <LiMenuLeft onMouseOver={()=>this.setState({showItem:value})}><a key={key} href={this.props.name + "/" + value}>{this.replaceTap(this.capitalizeFirstLetter(value))}</a></LiMenuLeft>
+            return <LiMenuLeft onMouseOver={()=>this.setState({showItem:value})}><a key={key} href={types.homePage + this.props.name + "/" + value}>{this.replaceTap(this.capitalizeFirstLetter(value))}</a></LiMenuLeft>
         })
         let menu
         let widthItemStyle = {
@@ -58,12 +59,12 @@ class DropDownMenu extends React.Component{
                                 <div style={widthItemStyle} className="card">
                                     <div className="menu-post-item">
                                         <div className="post-item-image">
-                                            <a href={value.linkPage}>
+                                            <a href={types.homePage + value.linkPage}>
                                                 <img className="img-post-item" src={value.imgLink}/>
                                             </a>
                                         </div>
                                         <div className="post-item-title">
-                                            <a href={value.linkPage}><HoverStyle>{value.title}</HoverStyle></a>
+                                            <a href={types.homePage + value.linkPage}><HoverStyle>{value.title}</HoverStyle></a>
                                         </div>
                                         <p className="post-meta">
                                             <HoverStyle>{value.author}</HoverStyle>

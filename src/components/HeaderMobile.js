@@ -2,6 +2,7 @@ import React from 'react'
 import {withTranslation} from 'react-i18next'
 import {Container} from 'react-bootstrap'
 import {ThemeProvider} from 'styled-components'
+import * as types from '../constant'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars,faSearch,faSignInAlt,faUserPlus,faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF,faTwitter,faPinterestP,faInstagram,faLinkedin,faVk,faYahoo } from '@fortawesome/free-brands-svg-icons' 
@@ -36,7 +37,7 @@ class HeaderMobile extends React.Component{
                 <div className="nav-item" onClick={() => {this.state.showItem!==name? this.setState({showItem:name}) : this.setState({showItem:""})
             }
             }>
-                    <a href="" target="_blank">
+                    <a href={types.homePage + ""} target="_blank">
                         {t(name)}
                         <FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon>
                     </a>
@@ -68,7 +69,7 @@ class HeaderMobile extends React.Component{
                                 <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                             </div>
                             <div className="logo-moblie">
-                                <a href="/home" target="_blank" className={"logo-img-mobile"}>
+                                <a href={types.homePage + "/"} target="_blank" className={"logo-img-mobile"}>
                                     <img src={this.props.settingBox.themeMode=="#fff"? logo:logoDark}/>
                                 </a>
                             </div>
@@ -79,41 +80,41 @@ class HeaderMobile extends React.Component{
                             <div className="menu-mobile" style={{transform: !this.state.showNav? "translateX(-350px)":"translateX(0px)"}}>
                                 <div className="nav-mobile-inner">
                                     <div className="login-mobile">
-                                        <a href="/" target="_blank" className="buttom-right">
+                                        <a href={types.homePage + "/"} target="_blank" className="buttom-right">
                                             <FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon>
                                             <span>Login</span>
                                         </a>
-                                        <a href="/" target="_blank">
+                                        <a href={types.homePage + "/"} target="_blank">
                                             <FontAwesomeIcon icon={faUserPlus}></FontAwesomeIcon>
                                             <span>Register</span>
                                         </a>
                                     </div>
                                     <div className="nav-menu-mobile">
                                         <ul className="">
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Home")}</a></LiMobile>
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Contact")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Home")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Contact")}</a></LiMobile>
                                             {
                                                 this.navItemCreate("LifeStyle",this.props.lifeStyle,t)
                                             }
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Abount")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Abount")}</a></LiMobile>
                                             {
                                                 this.navItemCreate("Fashion",this.props.fashion,t)
                                             }
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Quizzes")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Quizzes")}</a></LiMobile>
                                             {
                                                 this.navItemCreate("Travel",this.props.travel,t)
                                             }
                                             {
                                                 this.navItemCreate("Rss News",this.props.rssNews,t)
                                             }
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Video")}</a></LiMobile>
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Gallery")}</a></LiMobile>
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("BuyNow")}</a></LiMobile>
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Sport")}</a></LiMobile>
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("Page")}</a></LiMobile>
-                                            <LiMobile><a href="" target="_blank" className="nav-item">{t("ExternalLinks")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Video")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Gallery")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("BuyNow")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Sport")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("Page")}</a></LiMobile>
+                                            <LiMobile><a href={types.homePage + ""} target="_blank" className="nav-item">{t("ExternalLinks")}</a></LiMobile>
                                             <LiMobile>
-                                                <a href="" target="_blank" className="nav-item">{t("Language")}</a>
+                                                <a href={types.homePage + ""} target="_blank" className="nav-item">{t("Language")}</a>
                                                 <div className="language-mobile">
                                                     <LanguageMobile language={this.state.language=="en"?"active":"not-active"} onClick={()=>{
                                                         this.setState({language:"en"})
@@ -135,13 +136,13 @@ class HeaderMobile extends React.Component{
                                 
                             </div>
                             <NavMobileFooter className="nav-mobile-footer" style={{transform: !this.state.showNav? "translateX(-350px)":"translateX(0px)"}}>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-facebook"><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-twitter"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-pinterest"><FontAwesomeIcon icon={faPinterestP}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-instagram"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-linkedin"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-vk"><FontAwesomeIcon icon={faVk}></FontAwesomeIcon></a>
-                                <a href="/" target="_blank" className="mobile-menu-social icon-yahoo"><FontAwesomeIcon icon={faYahoo}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-facebook"><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-twitter"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-pinterest"><FontAwesomeIcon icon={faPinterestP}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-instagram"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-linkedin"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-vk"><FontAwesomeIcon icon={faVk}></FontAwesomeIcon></a>
+                                <a href={types.homePage + "/"} target="_blank" className="mobile-menu-social icon-yahoo"><FontAwesomeIcon icon={faYahoo}></FontAwesomeIcon></a>
                             </NavMobileFooter>
                     </HeaderMobileTheme>
                 </div>

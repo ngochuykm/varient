@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {HoverStyle} from '../../style/styled-component'
 import {faComment,faEye,faMusic,faPlay} from '@fortawesome/free-solid-svg-icons'
 import LazyLoad from 'react-lazyload'
+import * as types from '../../constant'
 import { faRProject } from '@fortawesome/free-brands-svg-icons'
 
 const Loading = () => (
@@ -104,7 +105,7 @@ class SectionRight extends React.Component{
                             <div className="each-slide slide-item">
                                 <div className="slide-item">
                                     <span className="category-label" style={{backgroundColor:typeColor[data.all[0].type]}}>{data.all[0].type}</span>
-                                    <a href={data.all[0].linkPage} className="img-link">
+                                    <a href={types.homePage + data.all[0].linkPage} className="img-link">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAHMAQMAAAAzt0RXAAAAA1BMVEVHcEyC+tLSAAAAAXRSTlMAQObYZgAAADhJREFUGBntwTEBAAAAwiD7p14MH2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAXYiQAAEBSA5gAAAAAElFTkSuQmCC" alt="bg" class="img-responsive img-bg"/>
                                         <div className="img-container">
                                             {data.all[0].typeIcon=="none" ? "":(<div class="meida-icon">

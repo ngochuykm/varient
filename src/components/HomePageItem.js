@@ -3,6 +3,7 @@ import {Container} from '../style/styled-component'
 import ContentItemHomePage from './ContentItemHomePage'
 import SlideBar from './homePage/SlideBar'
 import Footer from './Footer'
+import * as types from '../constant'
 import '../style/homePage.css'
 
 const Loading = () => (
@@ -35,9 +36,9 @@ class HomePageItem extends React.Component{
                 <Container>
                     <div className="name-page">
                         {this.props.pageSource.map((value,key) => {
-                            return <span key={key}><a href={value.pageLink}>{(key>0? " / ": "") + value.name}</a></span>
+                            return <span key={key}><a href={types.homePage + value.pageLink}>{(key>0? " / ": "") + value.name}</a></span>
                         })}
-                        <span><a href={this.props.pageLink}>{" / " + this.props.name}</a></span>
+                        <span><a href={types.homePage + this.props.pageLink}>{" / " + this.props.name}</a></span>
                     </div>
                     <div className="page-title">{this.capitalizeFirstLetter(title.replace(/[A-Z]/g, function(v) { return " "+v; }))}</div>
                     <div className="main">

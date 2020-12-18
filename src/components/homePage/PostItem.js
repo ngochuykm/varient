@@ -35,7 +35,7 @@ class PostItem extends React.Component{
                     </PostItemImage>
                     <PostItemRight className="post-item-right">
                         <PostItemTitle className="title-post-item">
-                            <HoverStyle title={this.props.title}><a href={this.props.data.linkPage}>{this.props.data.title}</a></HoverStyle>
+                            <HoverStyle title={this.props.title}><a href={types.homePage+this.props.data.linkPage}>{this.props.data.title}</a></HoverStyle>
                         </PostItemTitle>
                         <div className="post-meta-item post-meta">
                             <HoverStyle>{this.props.data.author}</HoverStyle>
