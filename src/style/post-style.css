@@ -1,0 +1,162 @@
+.category-label-post{
+    padding: 2px 3px;
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+}
+.post-container{
+    text-align: left;
+    margin: 0px 10px;
+}
+.post-container .name-page{
+    padding: 0px;
+    font-size: 12px;
+}
+.main-post{
+    display: flex;
+    width: 100%;
+}
+.post-title{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #222;
+}
+.post-summary {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    overflow-wrap: break-word;
+    margin-top: 0;
+    font-weight: 400;
+}
+.post-summary h2{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: inherit;
+}
+.post-meta-content{
+    display: flex;
+    justify-content: space-between;
+}
+.post-content{
+    color: #222!important;
+}
+.author{
+    color: #222!important;
+    font-size: 12px!important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.post-meta .date{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.mobile-menu-social-post{
+    width: auto!important;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.share-box a:hover{
+    opacity: 0.8;
+}
+.mobile-menu-social-post span{
+    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+.post-meta .comment{
+    text-align: left;
+}
+.post-meta .right{
+    margin-top: 28px;
+    font-size: 12px;
+}
+.tags-item-post{
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.tags-title{
+    margin-right: 10px;
+}
+.author img{
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+.post-image{
+    margin-top: 20px;
+}
+.post-image span{
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 18px;
+    color: #666;
+    margin-top: 5px;
+}
+.post-text p{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 26px;
+    color: #222;
+    margin: 15px 0px;
+}
+.post-reaction{
+    display: flex;
+}
+.card-box{
+    flex: 1;
+    text-align: center;
+    margin-right: 6px;
+}
+.img-reaction{
+    width: 60px;
+    height: 60px;
+}
+.span-vote{
+    position: absolute;
+    width: auto;
+    height: 20px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    text-align: center;
+}
+.progress{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #f5f5f5;
+}
+.progress-bar{
+    width: 100%;
+    opacity: 0.8;
+}
+.progress:hover .progress-bar{
+    opacity: 1;
+}
+.reaction-name{
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+}
+.reaction-tags{
+    background-color: #e6e6e6!important;
+    padding: 3px 0px;
+    line-height: 26px;
+    color: #222!important;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

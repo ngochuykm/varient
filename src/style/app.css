@@ -1,0 +1,52 @@
+@font-face{
+    font-family: Roboto;
+    src: url(./font/Roboto/Roboto-Regular.ttf);
+}
+@media screen and (max-width: 991px){
+    .top-bar{
+        display: none;
+    }
+    .header-mobile{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .setting-box{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .slide-bar{
+        width: 100%;
+    }
+    .slide-item-small{
+        height: auto;
+    }
+    .main{
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .img-wrap,.meida-icon{
+        text-align: left;
+    }
+}
+@media screen and (min-width: 992px){
+    .header-mobile{
+        display: none;
+    }
+}
+ul{
+    list-style: none;
+}
+.nav-item{
+    width: 100%;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}

@@ -1,0 +1,72 @@
+export default function getActivityAPI() {
+    return ({ 
+        all:[
+            {
+                title: "Are you logical or emotional?",
+                imgLink:"https://varient.codingest.com/uploads/images/2020/09/image_380x226_5f667438bd786.jpg",
+                linkPage:"/effect-twenty-indeed-beyond-for-not-had-county",
+                author:"author",
+                type:"img",
+                date:"Sep 19, 2020",
+                description:"Cras ultricies ac urna in sollicitudin. Quisque pretium sapien in molestie eleifend....",
+                comment:5,
+                viewed:96,
+            },
+            {
+                title: "How well do you know the famous places in the...",
+                imgLink:"https://varient.codingest.com/uploads/images/2020/09/image_380x226_5f667252442d5.jpg",
+                linkPage:"/effect-twenty-indeed-beyond-for-not-had-county",
+                author:"author",
+                type:"img",
+                date:"Sep 19, 2020",
+                description:"Sed bibendum gravida ipsum ac mattis. Morbi id felis a tellus faucibus tempor. Pellentesque...",
+                comment:5,
+                viewed:96,
+            },
+            {
+                title: "How much do you know the Solar System?",
+                imgLink:"https://varient.codingest.com/uploads/images/2020/09/image_380x226_5f666a77f1b56.jpg",
+                linkPage:"/effect-twenty-indeed-beyond-for-not-had-county",
+                author:"author",
+                type:"img",
+                date:"Sep 19, 2020",
+                description:"Phasellus eleifend lorem at velit congue rutrum. Maecenas eu tortor nec arcu dictum...",
+                comment:5,
+                viewed:96,
+            },
+            {
+                title: "What kind of personality do you have? ",
+                imgLink:"https://varient.codingest.com/uploads/images/2020/09/image_380x226_5f664892076d5.jpg",
+                linkPage:"/effect-twenty-indeed-beyond-for-not-had-county",
+                author:"admin",
+                type:"img",
+                date:"Sep 19, 2020",
+                description:"Donec ut ipsum lectus. In commodo neque pellentesque neque cursus, et rutrum nunc...",
+                comment:5,
+                viewed:96,
+            },
+            {
+                title: "What do you know about animals?",
+                imgLink:"https://varient.codingest.com/uploads/images/2020/09/image_380x226_5f6646ab4cf2c.jpg",
+                linkPage:"/effect-twenty-indeed-beyond-for-not-had-county",
+                author:"author",
+                type:"img",
+                date:"Sep 19, 2020",
+                description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies ligula lectus",
+                comment:5,
+                viewed:96,
+            },
+            {
+                title: "What do you know about animals?",
+                imgLink:"https://varient.codingest.com/uploads/images/2020/09/image_380x226_5f6646ab4cf2c.jpg",
+                linkPage:"/effect-twenty-indeed-beyond-for-not-had-county",
+                author:"author",
+                type:"img",
+                date:"Sep 19, 2020",
+                description:"It is a long established fact that a reader will be distracted by the readable content...",
+                comment:5,
+                viewed:96,
+            }
+        ]
+    })
+}
