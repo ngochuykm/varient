@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/varient/static/css/main.82902088.chunk.css",
+    "main.js": "/varient/static/js/main.c121d169.chunk.js",
+    "main.js.map": "/varient/static/js/main.c121d169.chunk.js.map",
+    "runtime-main.js": "/varient/static/js/runtime-main.a01d2051.js",
+    "runtime-main.js.map": "/varient/static/js/runtime-main.a01d2051.js.map",
+    "static/js/2.541fc853.chunk.js": "/varient/static/js/2.541fc853.chunk.js",
+    "static/js/2.541fc853.chunk.js.map": "/varient/static/js/2.541fc853.chunk.js.map",
+    "index.html": "/varient/index.html",
+    "precache-manifest.b91d0df92793550b746c61103957c9c8.js": "/varient/precache-manifest.b91d0df92793550b746c61103957c9c8.js",
+    "service-worker.js": "/varient/service-worker.js",
+    "static/css/main.82902088.chunk.css.map": "/varient/static/css/main.82902088.chunk.css.map",
+    "static/js/2.541fc853.chunk.js.LICENSE.txt": "/varient/static/js/2.541fc853.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/varient/static/media/Roboto-Regular.11eabca2.ttf",
+    "static/media/bn1.jpg": "/varient/static/media/bn1.63bd1add.jpg",
+    "static/media/logo-footer.svg": "/varient/static/media/logo-footer.aba05190.svg",
+    "static/media/logo.svg": "/varient/static/media/logo.83da1a02.svg",
+    "static/media/theme_dark_front.jpg": "/varient/static/media/theme_dark_front.3fb9af19.jpg",
+    "static/media/theme_light_front.jpg": "/varient/static/media/theme_light_front.903bef18.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a01d2051.js",
+    "static/js/2.541fc853.chunk.js",
+    "static/css/main.82902088.chunk.css",
+    "static/js/main.c121d169.chunk.js"
+  ]
+}
