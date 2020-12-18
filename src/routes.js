@@ -1,7 +1,7 @@
 import React from 'react'
 import * as page from './pages'
 import {
-    BrowserRouter, Route, Switch
+    HashRouter, Route, Switch
 } from 'react-router-dom'
 import {RouteItem} from '../src/route/RouteItem'
 let RouteItems = []
@@ -20,11 +20,11 @@ const Routes = () => {
     RoutesItemRender(RouteItem,[])
     console.log(RouteItems)
     return(
-    <BrowserRouter>
+    <HashRouter>
         <Switch>
             {RouteItems}
             <Route exact path="/hhh" component={page.HomePage}/>
         </Switch>
-    </BrowserRouter>
+    </HashRouter>
 )}
 export default Routes
