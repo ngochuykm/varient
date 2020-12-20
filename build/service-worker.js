@@ -10,6 +10,16 @@
  * and re-run your build process.
  * See https://goo.gl/2aRDsh
  */
+var app = express();
+
+app.get('*', function (req, res) { // This wildcard method handles all requests
+
+    Router.run(routes, req.path, function (Handler, state) {
+        var element = React.createElement(Handler);
+        var html = React.renderToString(element);
+        res.render('main', { content: html });
+    });
+});
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
