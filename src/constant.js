@@ -77,4 +77,4 @@ export const typeColors = {
     LAST_POSTS:"#161616"
 }
 
-export const homePage = "/varient"
+export const homePage = ""
