@@ -39,6 +39,13 @@ app.post('/weather', async (req, res) => {
         return res.status(500).send('Error.')
     }
 })
+app.use('/api/user', require('./routes/user'));
+
+// For any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+})
 app.get('*', (req, res) => {
     res.sendFile(path.resolve('client', 'build', 'index.html'));
 });
