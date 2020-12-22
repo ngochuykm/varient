@@ -44,4 +44,7 @@ app.get('*', (req, res) => {
 });
 // console.log that your server is up and running
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
-app.listen(process.env.PORT || 5000);
+var server = app.listen(process.env.PORT || 5000, function () {
+    var port = server.address().port;
+    console.log("Express is working on port " + port);
+  });
